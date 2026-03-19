@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tienda en Línea | Login</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-page="login">
+		<main class="page">
+			<section class="login-card auth-card" aria-labelledby="login-title">
+				<header class="login-header">
+					<p class="eyebrow">Acceso seguro</p>
+					<h1 id="login-title">Iniciar sesion</h1>
+					<p class="subtitle">Ingresa con tu nombre, o correo y tu contrasena.</p>
+				</header>
+
+				<form id="login-form" class="login-form" action="/login" method="POST" novalidate>
+					<div class="field">
+						<label for="usuario">Nombre o correo</label>
+						<input
+							id="usuario"
+							name="username"
+							type="text"
+							placeholder="Ej: Nombre o correo@dominio.com"
+							autocomplete="username"
+							aria-describedby="usuario-error"
+							required
+						/>
+						<small id="usuario-error" class="error" aria-live="polite"></small>
+					</div>
+
+					<div class="field">
+						<label for="password">Contrasena</label>
+						<input
+							id="password"
+							name="password"
+							type="password"
+							placeholder="Tu contrasena"
+							autocomplete="current-password"
+							aria-describedby="password-error"
+							required
+						/>
+						<small id="password-error" class="error" aria-live="polite"></small>
+					</div>
+
+					<button class="btn btn-primary" type="submit">Iniciar sesion</button>
+				</form>
+
+				<div class="signup">
+					<p>No tienes usuario?</p>
+					<a href="registro.html" class="link">Crea una cuenta aqui</a>
+					<a href="index.html" class="btn btn-secondary">Regresar a productos</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<a href="legal.html#terminos">Términos y condiciones</a>
+			<a href="legal.html#privacidad">Política de privacidad</a>
+			<a href="legal.html#devoluciones">Política de devoluciones</a>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tienda en Línea | Inicio</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-page="index">
+		<header class="site-header">
+			<div>
+				<h1 class="brand-title">Tecno City Zone</h1>
+			</div>
+			<nav class="nav-links">
+				<a href="index.html">Inicio</a>
+				<a href="carrito.html">Carrito</a>
+				<a href="login.html">Login</a>
+			</nav>
+		</header>
+
+		<main class="container">
+			<section class="hero">
+				<h2>Catálogo de Productos</h2>
+				<p>Selecciona un producto para ver su detalle y agregarlo al carrito.</p>
+			</section>
+
+			<section class="category-toolbar">
+				<button id="toggle-categories" class="category-trigger" type="button" aria-expanded="false" aria-controls="category-drawer">☰ Explorar categorias</button>
+				<div class="catalog-tools-right">
+					<p id="category-summary" class="category-summary">Cargando categorias...</p>
+					<div class="catalog-order-wrap">
+						<label for="catalog-order">Ordenar por</label>
+						<select id="catalog-order">
+							<option value="az">Nombre A-Z</option>
+							<option value="za">Nombre Z-A</option>
+							<option value="precio-desc">Precio mayor a menor</option>
+							<option value="precio-asc">Precio menor a mayor</option>
+						</select>
+					</div>
+					<div class="catalog-order-wrap">
+						<label for="catalog-budget">Tu presupuesto</label>
+						<input id="catalog-budget" type="number" min="0" step="0.01" placeholder="Ej: 150" />
+					</div>
+				</div>
+			</section>
+
+			<div id="category-overlay" class="category-overlay" hidden></div>
+			<aside id="category-drawer" class="category-drawer" aria-hidden="true">
+				<div class="category-drawer-head">
+					<h3>Categorias</h3>
+					<button id="close-categories" class="close-drawer" type="button" aria-label="Cerrar">×</button>
+				</div>
+				<p class="category-hint">Elige una categoria para filtrar el catalogo.</p>
+				<ul id="category-list" class="category-list"></ul>
+			</aside>
+
+			<section id="product-list" class="product-grid"></section>
+		</main>
+
+		<footer class="site-footer">
+			<a href="legal.html#terminos">Términos y condiciones</a>
+			<a href="legal.html#privacidad">Política de privacidad</a>
+			<a href="legal.html#devoluciones">Política de devoluciones</a>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

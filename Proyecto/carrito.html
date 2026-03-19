@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tienda en Línea | Carrito</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-page="carrito">
+		<header class="site-header">
+			<div>
+				<h1 class="brand-title">Tecno City Zone</h1>
+			</div>
+			<nav class="nav-links">
+				<a href="index.html">Inicio</a>
+				<a href="carrito.html">Carrito</a>
+				<a href="login.html">Login</a>
+			</nav>
+		</header>
+
+		<main class="container">
+			<section class="table-wrap">
+				<table>
+					<thead>
+						<tr>
+							<th>Producto</th>
+							<th>Precio Unitario</th>
+							<th>Cantidad</th>
+							<th>Subtotal</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+					<tbody id="cart-body"></tbody>
+				</table>
+			</section>
+
+			<section id="cart-empty" class="empty-state" hidden>
+				<p>No hay productos seleccionados en el carrito.</p>
+				<a href="index.html" class="btn btn-primary">Ir al catálogo</a>
+			</section>
+
+			<p id="cart-totals" class="hero" style="margin-top: 16px"></p>
+		</main>
+
+		<footer class="site-footer">
+			<a href="legal.html#terminos">Términos y condiciones</a>
+			<a href="legal.html#privacidad">Política de privacidad</a>
+			<a href="legal.html#devoluciones">Política de devoluciones</a>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
