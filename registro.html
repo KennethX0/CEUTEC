@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tienda en Línea | Registro</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-page="registro">
+		<main class="page">
+			<section class="login-card auth-card" aria-labelledby="register-title">
+				<header class="login-header">
+					<p class="eyebrow">Nuevo usuario</p>
+					<h1 id="register-title">Crear cuenta</h1>
+					<p class="subtitle">Regístrate para poder comprar y usar la administración.</p>
+				</header>
+
+				<form id="register-form" class="login-form" novalidate>
+					<div class="field">
+						<label for="nuevo-telefono">Telefono (ID)</label>
+						<input id="nuevo-telefono" name="telefono" type="text" required />
+						<small id="nuevo-telefono-error" class="error" aria-live="polite"></small>
+					</div>
+					<div class="field">
+						<label for="nuevo-nombre">Nombre</label>
+						<input id="nuevo-nombre" name="nombre" type="text" required />
+						<small id="nuevo-nombre-error" class="error" aria-live="polite"></small>
+					</div>
+					<div class="field">
+						<label for="nuevo-password">Contraseña</label>
+						<input id="nuevo-password" name="password" type="password" required />
+						<small id="nuevo-password-error" class="error" aria-live="polite"></small>
+					</div>
+					<div class="field">
+						<label for="nuevo-correo">Correo</label>
+						<input id="nuevo-correo" name="correo" type="email" required />
+						<small id="nuevo-correo-error" class="error" aria-live="polite"></small>
+					</div>
+					<div class="field">
+						<label for="nuevo-edad">Edad</label>
+						<input id="nuevo-edad" name="edad" type="number" min="1" required />
+						<small id="nuevo-edad-error" class="error" aria-live="polite"></small>
+					</div>
+					<button class="btn btn-primary" type="submit">Registrarme</button>
+				</form>
+
+				<div class="signup">
+					<a href="login.html" class="btn btn-secondary">Ya tengo cuenta</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<a href="legal.html#terminos">Términos y condiciones</a>
+			<a href="legal.html#privacidad">Política de privacidad</a>
+			<a href="legal.html#devoluciones">Política de devoluciones</a>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
